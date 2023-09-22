@@ -1,0 +1,221 @@
+.body{
+  background-color: white;
+}
+
+/*Inicio codigo Div cabeza*/
+.Encabezado{
+  border: 5px solid black;
+  color: black;
+  display: flex;
+  align-items: flex-end;
+  /*background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);*/
+}
+  
+.Logo{ /*Este es el codigo del div que contiene el logo*/
+  width: 210px;
+  height: 210px;
+  background: red;
+  padding: auto;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.Yeah{/*Este codigo hace referencia tamaño y lugar del logo*/
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.Menu{/*Este es el codigo dl div que contiene el menu*/
+  margin-bottom: 7%;
+  margin-left: 5%;
+  background: green;
+  color: white;
+  font-size: 20px;
+}
+
+.Menu .Conocenos{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Menu .Conocenos:hover{
+  color: gray;/*esta es la variable para resaltar el link*/
+}
+
+.Menu .Galeria{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Menu .Galeria:hover{
+  color: gray;/*esta es la variable para resaltar el link*/
+}
+
+.Menu .Opiniones{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Menu .Opiniones:hover{
+  color: gray;/*esta es la variable para resaltar el link*/
+}
+
+.Menu .Micarrito{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Menu .Micarrito:hover{
+  color: gray;/*esta es la variable para resaltar el link*/
+}
+
+.Inicio{
+  background-color: blue;
+  margin-left: 2%;
+  margin-bottom: 7%;
+}
+
+.Inicio .Iniciar{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Inicio .Iniciar:hover{
+  color: grey;/*esta es la variable para resaltar el link*/
+}
+
+.Inicio .Cerrar{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.Inicio .Cerrar:hover{
+  color: gray;/*esta es la variable para resaltar el link*/
+}
+/*Fin codigo Div cabeza*/
+
+
+/*Inicio codigo primera div con carrucel*/
+.Contenido{
+  height: 400px;
+  border: 5px solid black;
+  color: black;
+  display: flex;
+  margin-top: auto;
+}
+
+.Descripcion{
+  width: 50%;
+  background:red ;
+}
+
+.Titulo1{ 
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+
+.Titulo2{
+  font-size: 30px;
+  color: purple;
+  margin-left: 10px;
+}
+
+.Titulo3{
+  font-size: 30px;
+  color: azure;
+  margin-left: 10px;
+}
+
+.Estilo{/*Codigo para el boton de crear tu estilo*/
+  height: 40px;
+  background: blue;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.carousel-container { /*Codigo para Carousel*/
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  order: 1;
+}
+
+.carousel-button.next {
+  order: 3;
+}
+/*Fin codigo primera div con carrucel*/
+
+
+.Somos{
+  height: 400px;
+  border: 5px solid black;
+  color: black;
+  display: flex;
+  margin-top: auto;
+}
+
+.slider{
+  overflow: hidden;
+}
+.slider img{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
+
+
