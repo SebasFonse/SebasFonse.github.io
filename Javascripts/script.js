@@ -1,3 +1,5 @@
+// Asegúrate de que este nuevo código JavaScript esté debajo del código anterior.
+
 const carousel2 = document.querySelector('#carousel2');
 const prevButton2 = document.querySelector('[data-target="carousel2"].prev');
 const nextButton2 = document.querySelector('[data-target="carousel2"].next');
