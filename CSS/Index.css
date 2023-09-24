@@ -140,15 +140,6 @@
   margin-left: 10px;
 }
 
-.Estilo{/*Codigo para el boton de crear tu estilo*/
-  height: 40px;
-  background: blue;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  margin-left: 10px;
-}
-
 .Carrusel-container { /*Codigo para Carousel*/
   width: 300px;
   margin: 0 auto;
@@ -178,7 +169,7 @@
 }
 /*Fin codigo primera div con carrucel*/
 
-/*Inicio segundro Carrucel*/
+/*Inicio segundo Carrucel*/
 .Somos{
   height: 400px;
   border: 5px solid black;
@@ -218,15 +209,6 @@
   margin-left: 10px;
 }
 
-.Estilo{/*Codigo para el boton de crear tu estilo*/
-  height: 40px;
-  background: blue;
-  color: white;
-  font-size: 18px;
-  border-radius: 20px;
-  margin-left: 10px;
-}
-
 .carousel-container { /*Codigo para Carousel*/
   width: 300px;
   margin: 0 auto;
@@ -253,4 +235,32 @@
 
 .carousel-button.next {
   order: 3;
+}
+/*Fin segundo Carrucel*/
+
+/*Inicio de la vista previa de la camisa*/
+.Diseño{
+  height: 400px;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  background-color: aqua;
+}
+
+.Estilo{/*Codigo para el boton de crear tu estilo*/
+  height: 40px;
+  background: blue;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+/*Fin de la vista previa de la camisa*/
+
+/*Inicio de la galeria*/
+.Productos{
+  height: 400px;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
 }

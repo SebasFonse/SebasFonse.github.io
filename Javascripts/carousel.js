@@ -1,7 +1,7 @@
 const carousel = document.querySelector('.Carrusel');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
-const images = document.querySelectorAll('.carousel img');
+const images = document.querySelectorAll('.Carrusel img');
 let currentIndex = 0;
 const slideWidth = images[0].clientWidth;
 function goToIndex(index) {
