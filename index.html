@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/Index.css">
     <title>Camisas</title>
 </head>
@@ -17,12 +18,12 @@
 
         <div class="Menu">
             <a class="Conocenos" href="#Nosotros">¿Quienes somos?</a>
-            <a class="Galeria" href="">Galeria</a>
+            <a class="Galeria" href="#Galeria">Galeria</a>
             <a class="Opiniones" href="">Opiniones</a>
             <a class="Micarrito" href="">Mi carrito</a>
         </div>
 
-        <div class="Inicio">
+        <div class="Inicio"> 
             <a href="" class="Iniciar">Inicio secion</a>
             <a href="" class="Cerrar">Cerrar secion</a>
         </div>
@@ -38,45 +39,69 @@
             <H2 class="Titulo2">¡UNA OPORTUNIDAD DE SER ORIGINAL!</H2><br>
 
             <h2 class="Titulo3">DESDE: $29.900</h2><br>
-
-            <input class="Estilo" type="submit" value="Crea Tu Estilo">
             </p>
         </div>
 
-        <div class="carousel-container">
-            <div class="carousel">
+        <div class="Carrusel-container">
+            <div class="Carrusel">
                 <img src="IMG/Camisa 1.png" alt="">
                 <img src="IMG/Camisa 2.png" alt="">
                 <img src="IMG/Camisa 3.png" alt="">
             </div>
-            <div class="carousel-button prev">&#10094;</div>
-            <div class="carousel-button next">&#10095;</div>
+            <div class="Carrusel-button prev">&#10094;</div>
+            <div class="Carrusel-button next">&#10095;</div>
         </div>
-
-        <script src="Javascripts/carousel.js"></script>
     </div><br>
 
-    <div class="Somos" id="Nosotros">
-        <div class="slider">
-            <img src="IMG/Camisa 1.png" alt="">
-            <img src="IMG/Camisa 2.png" alt="">
-            <img src="IMG/Camisa 3.png" alt="">
+    <div class="Contenido" id="Nosotros">
+        <div class="carousel-container" id="carouselContainer2">
+            <div class="carousel" id="carousel2">
+                <img src="IMG/Camisa 1.png" alt="">
+                <img src="IMG/Camisa 2.png" alt="">
+                <img src="IMG/Camisa 3.png" alt="">
+            </div>
+            <div class="carousel-button prev" data-target="carousel2">&#10094;</div>
+            <div class="carousel-button next" data-target="carousel2">&#10095;</div>
         </div>
 
         <div class="Descripcion">
             <p class="Texto">
-
-            <h1 class="Titulo1">CREA UN ESTILO UNICO EN UNA CAMISA UNICA</h1><br>
-
-            <H2 class="Titulo2">¡UNA OPORTUNIDAD DE SER ORIGINAL!</H2><br>
-
-            <h2 class="Titulo3">DESDE: $29.900</h2><br>
-
-            <input class="Estilo" type="submit" value="Crea Tu Estilo">
+                <h1 class="Titulo1">OTRO CARRUSEL INDEPENDIENTE</h1><br>
+                <H2 class="Titulo2">¡AÑADE TU CONTENIDO AQUÍ!</H2><br>
+                <h2 class="Titulo3">PRECIO: $XX.XX</h2><br>
             </p>
         </div>
     </div><br>
 
-</body>
+    <div class="Diseño">
+        <div>
+            <h1>Estas a punto de crear un diseño unico</h1><br>
+            <H1>Eligue lo que mas te gusta y muestralo al mundo</H1><br>
+            <h1>Es momento de crear tu estilo</h1><br>
+            <input class="Estilo" type="submit" value="Crea Tu Estilo">
+        </div>
+    </div><br>
 
+    <div class="Productos" id="Galeria">
+        <div class="carousel-container" id="carouselContainer3">
+            <div class="carousel" id="carousel3">
+                <img src="IMG/Foto1.jpg" alt="">
+                <img src="IMG/Foto2.jpg" alt="">
+                <img src="IMG/Foto3.jpg" alt="">
+            </div>
+            <div class="carousel-button prev" data-target="carousel3">&#10094;</div>
+            <div class="carousel-button next" data-target="carousel3">&#10095;</div>
+        </div>
+        <script src="Javascripts/Carrusel.js"></script>
+        <script src="Javascripts/carousel.js"></script>
+        <script src="Javascripts/script.js"></script>
+    </div><br>
+
+    <div>
+
+    </div>
+
+</body>
 </html>
+
+

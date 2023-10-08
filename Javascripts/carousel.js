@@ -1,7 +1,7 @@
-const carousel = document.querySelector('.carousel');
+const carousel = document.querySelector('.Carrusel');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
-const images = document.querySelectorAll('.carousel img');
+const images = document.querySelectorAll('.Carrusel img');
 let currentIndex = 0;
 const slideWidth = images[0].clientWidth;
 function goToIndex(index) {
@@ -19,3 +19,4 @@ function prevSlide() {
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
 setInterval(nextSlide, 2000); // Cambiar de imagen cada 3 segundos (ajusta según tus preferencias)
+
