@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/Index.css">
     <title>Camisas</title>
 </head>
@@ -48,8 +47,8 @@
                 <img src="IMG/Camisa 2.png" alt="">
                 <img src="IMG/Camisa 3.png" alt="">
             </div>
-            <div class="Carrusel-button prev">&#10094;</div>
-            <div class="Carrusel-button next">&#10095;</div>
+            <div class="Carrusel-button prev"></div>
+            <div class="Carrusel-button next"></div>
         </div>
     </div><br>
 
@@ -60,8 +59,10 @@
                 <img src="IMG/Camisa 2.png" alt="">
                 <img src="IMG/Camisa 3.png" alt="">
             </div>
-            <div class="carousel-button prev" data-target="carousel2">&#10094;</div>
-            <div class="carousel-button next" data-target="carousel2">&#10095;</div>
+            <div class="carousel-button prev" data-target="carousel2"></div>
+            <div class="carousel-button next" data-target="carousel2"></div>
+            <script src="Javascripts/carousel.js"></script>
+            <script src="Javascripts/script.js"></script>
         </div>
 
         <div class="Descripcion">
@@ -83,22 +84,29 @@
     </div><br>
 
     <div class="Productos" id="Galeria">
-        <div class="carousel-container" id="carouselContainer3">
-            <div class="carousel" id="carousel3">
-                <img src="IMG/Foto1.jpg" alt="">
-                <img src="IMG/Foto2.jpg" alt="">
-                <img src="IMG/Foto3.jpg" alt="">
+
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="IMG/Foto1.jpg" alt="" class="slider__img">
             </div>
-            <div class="carousel-button prev" data-target="carousel3">&#10094;</div>
-            <div class="carousel-button next" data-target="carousel3">&#10095;</div>
+            <div class="slider__section">
+                <img src="IMG/Foto2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="IMG/Foto3.jpg" alt="" class="slider__img">
+            </div>
+                <div class="slider__section">
+                <img src="IMG/Foto4.jpg" alt="" class="slider__img">
+            </div>
         </div>
-        <script src="Javascripts/Carrusel.js"></script>
+
+
+        <div class="slider__btn slider__btn--right" id="btn-right">&#10095;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#10094;</div> 
+
         <script src="Javascripts/carousel.js"></script>
         <script src="Javascripts/script.js"></script>
-    </div><br>
-
-    <div>
-
+        <script src="Javascripts/slider.js"></script>
     </div>
 
 </body>
