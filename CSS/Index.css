@@ -4,7 +4,6 @@
 
 /*Inicio codigo Div cabeza*/
 .Encabezado{
-  border: 5px solid black;
   color: black;
   display: flex;
   align-items: center;
@@ -106,7 +105,6 @@
 /*Inicio codigo primera div con carrucel*/
 .Contenido{
   height: 400px;
-  border: 5px solid black;
   color: black;
   display: flex;
   margin-top: auto;
@@ -167,7 +165,6 @@
 /*Inicio segundo Carrucel*/
 .Somos{
   height: 400px;
-  border: 5px solid black;
   color: black;
   display: flex;
   margin-top: auto;
@@ -175,7 +172,6 @@
 
 .Contenido{
   height: 400px;
-  border: 5px solid black;
   color: black;
   display: flex;
   margin-top: auto;
@@ -233,13 +229,15 @@
 /*Fin segundo Carrucel*/
 
 /*Inicio de la vista previa de la camisa*/
+
 .Diseño{
   height: 400px;
-  border: 5px solid black;
   color:white;
   text-align: center;
   background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
 }
+
+/*Fin de la vista previa de la camisa*/
 
 .Estilo{/*Codigo para el boton de crear tu estilo*/
   height: 40px;
@@ -253,12 +251,11 @@
 
 /*Inicio de la galeria*/
 .Productos{
-  border: 5px solid black;
   color: black; 
   justify-content: center;
   margin: auto;
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: auto;
   position: relative;
   overflow: hidden;
 }
