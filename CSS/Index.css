@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
+  background: linear-gradient(-90deg,#0F0F0F ,10%, #893F78);
 }
   
 .Logo{ /*Este es el codigo del div que contiene el logo*/
@@ -110,9 +110,9 @@
   margin-top: auto;
 }
 
-.Descripcion{
+.Descripcion_1{
   width: 50%;
-  background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
+  background: linear-gradient(-90deg,#0F0F0F ,10%, #893F78);
 }
 
 .Titulo1{ 
@@ -177,9 +177,9 @@
   margin-top: auto;
 }
 
-.Descripcion{
+.Descripcion_2{
   width: 50%;
-  background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
+  background: linear-gradient(90deg,#0F0F0F ,10%, #893F78);
 }
 
 .Titulo1{ 
@@ -305,4 +305,94 @@
   right: 10px;
 }
 
-/*Fin de la Galeri*/
+/*Fin de la Galeria*/
+
+/**/
+
+.Reseñas{
+  height: 400px;
+  color: black;
+  display: flex;
+  margin-top: auto;
+  background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
+}
+
+.Reseñas_1{
+  margin-left: 10px;
+  width: 70%;
+}
+
+.Reseñas label{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.Reseñas input{
+  width: 100%;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.Reseñas input[type="text"],
+.Reseñas input[type="email"] {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}   
+
+.clasificacion{
+  direction: rtl;/* right to left */
+  unicode-bidi: bidi-override;/* bidi de bidireccional */
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  text-align: center;
+}
+
+.Reseñas input[type = "radio"]{ 
+  display:none;
+}
+
+.Extrellas {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.clasificacion p {
+  text-align: center;
+}
+
+.Extrellas label {
+  font-size: 20px;
+}
+
+.Extrellas input[type="radio"] {
+  display: none;
+}
+
+.Extrellas label {
+  color: grey;
+}
+
+.Extrellas {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.clasificacion label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+.clasificacion input[type="radio"]:checked ~ label {
+  color: orange;
+}

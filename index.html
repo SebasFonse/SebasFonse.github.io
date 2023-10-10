@@ -23,8 +23,8 @@
         </div>
 
         <div class="Inicio"> 
-            <a href="" class="Iniciar">Inicio secion</a>
-            <a href="" class="Cerrar">Cerrar secion</a>
+            <a href="" class="Iniciar">Inicio sesion</a>
+            <a href="" class="Cerrar">Cerrar sesion</a>
         </div>
 
     </div>
@@ -32,7 +32,7 @@
 
     <!--Primera divisa con carrusel-->
     <div class="Contenido">
-        <div class="Descripcion">
+        <div class="Descripcion_1">
             <p class="Texto">
 
                 <h1 class="Titulo1">CREA UN ESTILO UNICO EN UNA CAMISA UNICA</h1><br>
@@ -67,7 +67,7 @@
             <div class="carousel-button next" data-target="carousel2"></div>
         </div>
 
-        <div class="Descripcion">
+        <div class="Descripcion_2">
             <p class="Texto">
                 <h1 class="Titulo1">OTRO CARRUSEL INDEPENDIENTE</h1><br>
                 <H2 class="Titulo2">¡AÑADE TU CONTENIDO AQUÍ!</H2><br>
@@ -126,15 +126,50 @@
 
         <div class="slider__btn slider__btn--right" id="btn-right">&#10095;</div>
         <div class="slider__btn slider__btn--left" id="btn-left">&#10094;</div> 
+    </div><br>
+    <!--Fin de la galeria de productos-->
 
-        <!--Inicio de los scripts para los caruceles-->
-        <script src="Javascripts/carousel.js"></script>
-        <script src="Javascripts/script.js"></script>
-        <script src="Javascripts/slider.js"></script>
-        <!--Fin de los scripts para los caruceles-->
+    <!--Inicio de los scripts para los caruceles-->
+    <script src="Javascripts/carousel.js"></script>
+    <script src="Javascripts/script.js"></script>
+    <script src="Javascripts/slider.js"></script>
+    <!--Fin de los scripts para los caruceles-->
+
+    <!-- -->
+    <div class="Reseñas">
+        <form class="Reseñas_1"  action=""><br>
+            <textarea name="" id="" cols="90" rows="24"></textarea>
+        </form>
+
+        <form action="">
+            <!-- NOMBRE -->
+            <br><label for="Nombre">NOMBRE COMPLETO</label>
+            <br><input type="text" placeholder="ingrese su usuario" name="usuario" autofocus>
+
+            <!-- CONTRASEÑA-->
+            <br><label for="Contraseña">CORREO</label>
+            <br><input type="email" placeholder="ingrese su correo" name="correo">
+            
+            <!-- boton -->
+            <br><input type="submit" value="Ingresar">
+
+            <form class="Extrellas">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+
+        </form>
     </div>
-     <!--Fin de la galeria de productos-->
-
 </body>
 </html>
 
