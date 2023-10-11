@@ -1,118 +1,107 @@
-.body{
+body{
   background-color: white;
+  font-family: sans-serif;
+  margin: 0%;
 }
 
 /*Inicio codigo Div cabeza*/
-.Encabezado{
-  color: black;
+header{
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.Logo{ /*Este es el codigo del div que contiene el logo*/
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(-90deg,#0F0F0F ,10%, #893F78);
 }
+
+.Logo img{
+  height: 150px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: gray;
+}
+
+@media (max-width:900px){
+  header{
+    flex-direction: column;
+  }
   
-.Logo{ /*Este es el codigo del div que contiene el logo*/
-  width: 210px;
-  height: 210px;
-  padding: auto;
-}
-
-.Yeah{/*Este codigo hace referencia tamaño y lugar del logo*/
-  width: 200px;
-  height: 200px;
-  margin-top: 10px;
-}
-
-.Menu{/*Este es el codigo dl div que contiene el menu*/
-  margin-left: 5%;
-  color: white;
-  font-size: 20px;
-}
-
-.Menu .Conocenos{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-  place-items: center;
-}
-
-.Menu .Conocenos:hover{
-  color: gray;/*esta es la variable para resaltar el link*/
-}
-
-.Menu .Galeria{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
-
-.Menu .Galeria:hover{
-  color: gray;/*esta es la variable para resaltar el link*/
-}
-
-.Menu .Opiniones{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
-
-.Menu .Opiniones:hover{
-  color: gray;/*esta es la variable para resaltar el link*/
-}
-
-.Menu .Micarrito{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
-
-.Menu .Micarrito:hover{
-  color: gray;/*esta es la variable para resaltar el link*/
-}
-
-.Inicio{
-  margin-left: 2%;
-}
-
-.Inicio .Iniciar{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
-
-.Inicio .Iniciar:hover{
-  color: grey;/*esta es la variable para resaltar el link*/
-}
-
-.Inicio .Cerrar{
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  padding: 10px;
-}
-
-.Inicio .Cerrar:hover{
-  color: gray;/*esta es la variable para resaltar el link*/
+  nav{
+    padding: 10px 0px;
+  }
 }
 /*Fin codigo Div cabeza*/
 
 
 /*Inicio codigo primera div con carrucel*/
 .Contenido{
-  height: 400px;
-  color: black;
   display: flex;
-  margin-top: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0%;
 }
 
-.Descripcion_1{
+.Box_1{
   width: 50%;
-  background: linear-gradient(-90deg,#0F0F0F ,10%, #893F78);
+  height: auto;
+  margin: 20px;
+  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
+  box-sizing: border-box;
+  font-size: 10px;
+  flex-flow: wrap;
+  text-align: center;
+  margin: 0;
+}
+
+.Box_2{
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 10px;
+  flex-flow: wrap;
+  text-align: center;
+  margin: 0%;
+}
+
+.Box_3{
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 10px;
+  flex-flow: wrap;
+  text-align: center;
+  margin: 0;
+}
+
+.Box_4{
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
+  box-sizing: border-box;
+  font-size: 10px;
+  flex-flow: wrap;
+  text-align: center;
+  margin: 0%;
 }
 
 .Titulo1{ 
@@ -160,27 +149,38 @@
 .Carrusel-button.next {
   order: 3;
 }
+
+@media screen and (max-width:900px){
+  .Contenido{
+    flex-direction: column;
+    min-width: none;
+  }
+  
+  .Box_1{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_2{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_3{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_4{
+    flex-direction: column;
+    width: auto; 
+  }
+} 
+
 /*Fin codigo primera div con carrucel*/
 
 /*Inicio segundo Carrucel*/
-.Somos{
-  height: 400px;
-  color: black;
-  display: flex;
-  margin-top: auto;
-}
 
-.Contenido{
-  height: 400px;
-  color: black;
-  display: flex;
-  margin-top: auto;
-}
-
-.Descripcion_2{
-  width: 50%;
-  background: linear-gradient(90deg,#0F0F0F ,10%, #893F78);
-}
 
 .Titulo1{ 
   font-size: 30px;
@@ -396,3 +396,4 @@ label:hover ~ label {
 .clasificacion input[type="radio"]:checked ~ label {
   color: orange;
 }
+
