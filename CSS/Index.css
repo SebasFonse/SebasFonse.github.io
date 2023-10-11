@@ -50,7 +50,7 @@ nav a:hover{
 /*Fin codigo Div cabeza*/
 
 
-/*Inicio codigo primera div con carrucel*/
+/*Inicio codigo Carruceles responsive*/
 .Contenido{
   display: flex;
   flex-direction: row;
@@ -58,18 +58,22 @@ nav a:hover{
   margin: 0%;
 }
 
+/*Caja de texto*/
 .Box_1{
   width: 50%;
   height: auto;
   margin: 20px;
-  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
   box-sizing: border-box;
+  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
   font-size: 10px;
   flex-flow: wrap;
   text-align: center;
   margin: 0;
+  display: grid;
+  place-items: center;
 }
 
+/*Caja de Carrucel*/
 .Box_2{
   width: 50%;
   height: auto;
@@ -81,6 +85,7 @@ nav a:hover{
   margin: 0%;
 }
 
+/*Caja de Carrucel*/
 .Box_3{
   width: 50%;
   height: auto;
@@ -92,37 +97,39 @@ nav a:hover{
   margin: 0;
 }
 
-.Box_4{
+/*Caja de texto*/
+.Box_4{ 
   width: 50%;
   height: auto;
   margin: 20px;
-  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
   box-sizing: border-box;
-  font-size: 10px;
   flex-flow: wrap;
   text-align: center;
+  align-items: center;
   margin: 0%;
+  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
+  display: grid;
+  place-items: center;
 }
 
 .Titulo1{ 
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  margin-left: 10px;
 }
 
 .Titulo2{
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  margin-left: 10px;
 }
 
 .Titulo3{
-  font-size: 30px;
+  font-size: 20px;
   color: white;
-  margin-left: 10px;
 }
 
-.Carrusel-container { /*Codigo para Carousel*/
+/* Inicio Codigo para priimer  Carousel*/
+
+.Carrusel-container { 
   width: 300px;
   margin: 0 auto;
   overflow: hidden;
@@ -150,57 +157,11 @@ nav a:hover{
   order: 3;
 }
 
-@media screen and (max-width:900px){
-  .Contenido{
-    flex-direction: column;
-    min-width: none;
-  }
-  
-  .Box_1{
-    flex-direction: column;
-    width: auto; 
-  }
+/* Fin Codigo para priimer Carousel*/
 
-  .Box_2{
-    flex-direction: column;
-    width: auto; 
-  }
+/* Inicio Codigo para Segundo Carousel*/
 
-  .Box_3{
-    flex-direction: column;
-    width: auto; 
-  }
-
-  .Box_4{
-    flex-direction: column;
-    width: auto; 
-  }
-} 
-
-/*Fin codigo primera div con carrucel*/
-
-/*Inicio segundo Carrucel*/
-
-
-.Titulo1{ 
-  font-size: 30px;
-  color: white;
-  margin-left: 10px;
-}
-
-.Titulo2{
-  font-size: 30px;
-  color: white;
-  margin-left: 10px;
-}
-
-.Titulo3{
-  font-size: 30px;
-  color: white;
-  margin-left: 10px;
-}
-
-.carousel-container { /*Codigo para Carousel*/
+.carousel-container { 
   width: 300px;
   margin: 0 auto;
   overflow: hidden;
@@ -226,26 +187,64 @@ nav a:hover{
 .carousel-button.next {
   order: 3;
 }
-/*Fin segundo Carrucel*/
+
+/* Fin Codigo para Segundo Carousel*/
+
+/* Inicio Codigo responsive */
+
+@media screen and (max-width:900px){
+  .Contenido{
+    flex-direction: column;
+    min-width: none;
+  }
+  
+  .Box_1{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_2{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_3{
+    flex-direction: column;
+    width: auto; 
+  }
+
+  .Box_4{
+    flex-direction: column;
+    width: auto; 
+    order: -1;
+  }
+} 
+
+/* Fin Codigo responsive */
 
 /*Inicio de la vista previa de la camisa*/
 
 .Diseño{
+  font-size: 20px;
   height: 400px;
+  max-height: 500px;
   color:white;
   text-align: center;
   background: linear-gradient(0deg,#0F0F0F ,10%, #893F78);
+  display: grid;
+  place-items: center;
 }
 
 /*Fin de la vista previa de la camisa*/
 
 .Estilo{/*Codigo para el boton de crear tu estilo*/
+  border: none;
+  outline: none;
   height: 40px;
   background: white;
   color: black;
   font-size: 18px;
   border-radius: 20px;
-  margin-left: 10px;
 }
 /*Fin de la vista previa de la camisa*/
 
