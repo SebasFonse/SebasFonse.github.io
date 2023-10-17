@@ -107,7 +107,7 @@ nav a:hover{
   text-align: center;
   align-items: center;
   margin: 0%;
-  background: linear-gradient(-90deg,#0F0F0F ,50%, #893F78);
+  background: linear-gradient(90deg,#0F0F0F ,50%, #893F78);
   display: grid;
   place-items: center;
 }
@@ -237,7 +237,9 @@ nav a:hover{
 
 /*Fin de la vista previa de la camisa*/
 
-.Estilo{/*Codigo para el boton de crear tu estilo*/
+/*Codigo para el boton de crear tu estilo*/
+
+.Estilo{
   border: none;
   outline: none;
   height: 40px;
@@ -246,17 +248,19 @@ nav a:hover{
   font-size: 18px;
   border-radius: 20px;
 }
+
 /*Fin de la vista previa de la camisa*/
 
 /*Inicio de la galeria*/
+
 .Productos{
+  border: black 2px solid;
   color: black; 
-  justify-content: center;
-  margin: auto;
-  width: 100%;
+  width: 50%;
   max-width: auto;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .slider{
@@ -303,10 +307,64 @@ nav a:hover{
 .slider__btn--right{
   right: 10px;
 }
+/*Segnda galeria*/
 
+.Productos_2{
+  border: black 2px solid;
+  color: black; 
+  width: 50%;
+  max-width: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider_2{
+  display: flex ;
+  width: 1000%;/*Para agregar mas imagenes*/
+  height: 800px;
+  margin-left: -100%;
+}
+
+.slider__section_2{
+  width: 100%;
+}
+
+.slider__img_2{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;/*Sirve para que las imagenes no se vean estiradas*/
+}
+
+.slider__btn_2{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(225, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn_2:hover{
+  background-color: white;
+}
+
+.slider__btn--left_2{
+  left: 10px;
+}
+
+.slider__btn--right_2{
+  right: 10px;
+}
 /*Fin de la Galeria*/
 
-/**/
+/*Comentarios*/
 
 .Reseñas{
   height: 400px;
