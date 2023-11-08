@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#shirt-preview {
+    text-align: center;
+}
+
+#shirt-colors, #designs {
+    margin-bottom: 20px;
+}
+
+.design-button {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#shirt-image {
+    max-width: 100%;
+    height: auto;
+}
