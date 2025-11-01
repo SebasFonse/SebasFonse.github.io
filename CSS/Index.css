@@ -1,0 +1,23 @@
+body{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+}
+.Padre{
+    padding: 30px;
+    background: #fff;
+    width: 1500PX;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.Foto{
+    background-color: aqua;
+    text-align: center;
+}
+
+.Foto_de_perfil{
+    padding: 10px;
+    width: 200px;
+    border-radius: 50%;
+}
