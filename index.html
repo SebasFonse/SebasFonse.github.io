@@ -4,23 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>JOYACERT</title>
 </head>
 <body>
 
-    <div class="container">
+    <!--Codigo para el contendor del Login-->
+    <div class="Container">
+        <div class="form-box login">
+            <form action="">
+                <h1>Iniciar sesion</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <i class='bx bxs-user' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Olvide mi contraseña</a>
+                </div>
+                <button type="submit" class="btn">Iniciar sesion</button>
+                <p>Ingresa con tus redes sociales</p>
+                <div class="iconos-redes">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </form>
+        </div>
 
-        <h2>LOGIN</h2>
+            <!--Codigo para el contendor del Registro-->
+        <div class="form-box registro">
+            <form action="">
+                <h1>Registro</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <i class='bx bxs-user' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Correo Electronico" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <button type="submit" class="btn">Registrate</button>
+                <p>Ingresa tus redes sociales</p>
+                <div class="iconos-redes">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </form>
+        </div>
 
-        <input type="text" id="username" placeholder="Usuario">
-
-        <input type="password" id="password" placeholder="Contraseña">
-
-        <button onclick="login()">Ingresar</button>
-
-        <a href="register.html">Registrarme</a>
-
+        <!--Modulo de movimiento para cambio de login a registro-->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hola, Bienvenido</h1>
+                <p>¿No tienes una cuenta?</p>
+                <button class="btn registro-btn">Registrate</button>
+            </div> 
+        </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Bienvenido de nuevo</h1>
+                <p>¿Ya tienes una cuenta?</p>
+                <button class="btn Inicio-btn">Iniciar sesion</button>
+            </div> 
+        </div>
     </div>
-    <script src="js/auth.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
